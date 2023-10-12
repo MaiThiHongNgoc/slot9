@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forrm validation</title>
     <link rel="stylesheet" href="slot9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha5121ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referre" />
+    
     <style>
         
     </style>
@@ -13,7 +15,7 @@
     <div class="container">
         <div class="content">
             <div class="logo">
-                <img src="images/logo.svg">
+                <img src="images/logo.svg" alt="">
             </div>
             <div class="image"></div>
             <div class="texr">Start for free & get<br> attractive offers today!</div>
@@ -21,7 +23,8 @@
 
         </div>
         <!---->
-        <form id="form">
+        <form action="#" id="form" method="post">
+            <div>
             <div class="social">
                 <div class="title">Get Started</div>
                 <div class="question">Already Have an Account?</br>
@@ -31,39 +34,49 @@
                 <div class="btn">
                 <div class="btn-1">
                     <img width="48" height="48" src="https://img.icons8.com/doodle/48/facebook-new.png" alt="facebook-new"/>
-                 Sign In
+                 Sign Up
                 </div>
                 
                 <div class="btn-2">
                     <img width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>
-                    Sign In
+                    Sign Up
                 </div>
-                <div class=".or">OR</div>
 
             </div>
+            </div>
+            <div class=".or">OR</div>
             </div>
             <!--username-->
             <div>
                 <label for="username">User Name</label>
-                <svg class="i" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>
-                <input type="text" name="username" id="username" placeholder="James Bond">
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" id="uername" placeholder="James Bond">
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <div class="error"></div>
 
             </div>
             <!--email-->
             <div>
                 <label for="email">Email</label>
-                <svg class="i" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
-                <input type="text" name="email" id="Email" placeholder="email@gmail.com" required>
+                <i class="fas fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="abc@gmail.com">
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
 
             </div>
             <!--password-->
             <div>
                 <label for="password">Password</label>
-                <svg class="i" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"/></svg>
-                <input type="text" name="password" id="password" placeholder="Password here" required>
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password">
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+                
 
             </div>
-            <button type="submit" id="submit">Submit</button>
+            <button id="btn" type="submit">Submit</button>
 
         </form>
 
@@ -71,4 +84,5 @@
         </div>
     
 </body>
+<script src="main.js"></script>
 </html>
